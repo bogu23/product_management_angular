@@ -1,0 +1,35 @@
+
+<div>
+
+  <h3>Add product</h3>
+  <!-- COMMENT  -->
+  <div class="input-group mb-3">
+    <input type="text" [(ngModel)]="product.name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">RON</span>
+    <input type="text" class="form-control" [(ngModel)]="product.price" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">.00</span>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Image url:</span>
+    <input type="text" [(ngModel)]="product.image" class="form-control" placeholder="Image url" aria-label="Image url" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Description:</span>
+    <textarea [(ngModel)]="product.description" class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon2">Manufactuer name:</span>
+    <input type="text" [(ngModel)]="product.manfacturer.name" class="form-control" placeholder="Manufacturer name" aria-label="Manufacturer name" aria-describedby="basic-addon2">
+  </div>
+
+
+  <button (click)="addProduct()" type="button" class="btn btn-success">Add Product</button>
+
+
+</div>

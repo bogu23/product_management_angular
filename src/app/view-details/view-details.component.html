@@ -1,0 +1,20 @@
+<div class="card mb-3" style="width: 100%">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img id="productImage" src="{{product.image}}" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <p  class="card-text"><small [ngClass]="getClass(product)" >Price:{{product.price}} lei</small></p>
+        <button  class="btn btn-danger" (click)="deleteProduct(product.id)"> Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-manufacturer-view [manufactuer]="product.manfacturer"></app-manufacturer-view>
+
+
+

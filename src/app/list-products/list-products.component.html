@@ -1,0 +1,18 @@
+
+<button (click)="goToAddProduct()" class="btn btn-success mb-3">Add product</button>
+
+
+<div id="productContainer" *ngFor="let product of products" class="card" style="width:100%;">
+  <img id="productImage" src="{{product.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+    <p *ngIf="product.price > 0">Price: {{product.price}} lei</p>
+    <p *ngIf="product.price <= 0">Gratuit</p>
+
+    <a (click)="goToViewPage(product.id)" class="btn btn-primary mr-3">View</a>
+
+    <a (click)="goToEditPage(product.id)" class="btn btn-primary">Edit</a>
+
+  </div>
+</div>
