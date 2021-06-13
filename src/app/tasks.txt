@@ -1,0 +1,50 @@
+CRUD products
+CRUD orders
+CRUD user
+
+HomePage
+  -imagine de background
+  -lista cu produse
+  -zona de search
+  -toolbar:
+      -butonul de Home
+      -buton pentru pagina cu produse(pagina unde sunt doar produsele)
+      -buton pentru autentificare Login/Register
+      -buton catre Contul Meu
+      -buton catre Cosul de cumparaturi
+      -buton pentru Admin
+
+ProductPage
+  -lista de produse + detalii pentru fiecare produs afisat
+  -zona de search
+
+AuthPage
+  -Login
+  -register
+  -Forgot password
+
+MyAccountPage
+  -editare date user(schimbare nume, adresa etc)
+
+AdminPage
+  -CRUD products
+   CRUD orders
+   CRUD user
+
+CartPage
+  -lista de produse adaugate in cos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
